@@ -1,58 +1,40 @@
-# PaintWebsite
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Overview
-This project is a Next.js-based webpage developed to create a website according to a Figma design prototype. The site is styled using Tailwind CSS and integrated with data pulled from a GraphQL API. The webpage is optimized for speed and follows best practices to ensure code cleanliness, maintainability, and scalability.
+## Getting Started
 
-## Features
-- Developed using Next.js.
-- Tailwind CSS for responsive and modern design.
-- Integrated with a GraphQL API for dynamic content fetching.
-- Optimized for Core Web Vitals to ensure excellent performance.
-- Deployed on Vercel for easy and fast deployment.
+First, run the development server:
 
-## Tech Stack
-- JavaScript
-- Next.js
-- Tailwind CSS
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-## API Integration
-The project integrates with a GraphQL API to fetch data for various sections of the webpage.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-API Endpoint: https://astralpaints.kwebmakerdigitalagency.com/graphql
+You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
-Query Example:
-{
-  pages(where: {name: "Homepage"}) {
-    nodes {
-      homepage {
-        banners {
-          bannerImage {
-            node {
-              sourceUrl
-            }
-          }
-          bannersTitle
-          bannerDescription
-          bannerButton {
-            title
-            url
-            target
-          }
-        }
-        homeAboutTitle
-        homeAboutSubtitle
-        ...
-      }
-    }
-  }
-}
+[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
 
-## Installation
-To install and run the application locally, follow these steps:
+The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-1. Clone this repository to your local machine
-2. Run npm install to install all dependencies
-3. Run npm start to start the development server
-4. Open http://localhost:3000/ in your browser to view the application
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Deployment Link
+## Learn More
+
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
