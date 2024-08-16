@@ -18,7 +18,7 @@ This project is a Next.js-based webpage developed to create a website according 
 ## API Integration
 The project integrates with a GraphQL API to fetch data for various sections of the webpage.
 
-# API Endpoint: https://astralpaints.kwebmakerdigitalagency.com/graphql
+API Endpoint: https://astralpaints.kwebmakerdigitalagency.com/graphql
 
 Query Example:
 {
